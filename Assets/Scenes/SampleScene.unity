@@ -284,10 +284,10 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1.1955566
-      value: 1.1238937
-      inSlope: 0
-      outSlope: 0
+      time: 1.2391052
+      value: 1.119278
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -298,7 +298,25 @@ MonoBehaviour:
   WaveSize: 2
   ropeLaunchSpeedCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.9400286
+      outSlope: 0.9400286
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0462341
+      value: 0.98349
+      inSlope: 0.9400286
+      outSlope: 0.9400286
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -438,10 +456,10 @@ MonoBehaviour:
   firePoint: {fileID: 1419613521}
   rotateOverTime: 1
   rotationSpeed: 18.3
-  hasMaxDistance: 1
-  maxDistance: 5
+  hasMaxDistance: 0
+  maxDistance: 20
   launchToPoint: 1
-  Launch_Type: 1
+  Launch_Type: 0
   launchSpeed: 1.13
   autoCongifureDistance: 0
   targetDistance: 3
