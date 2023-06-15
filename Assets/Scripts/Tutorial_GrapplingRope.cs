@@ -12,7 +12,7 @@ public class Tutorial_GrapplingRope : MonoBehaviour
 
     [Header("Rope Animation Settings:")]
     public AnimationCurve ropeAnimationCurve;
-    [Range(0.01f, 4)] [SerializeField] private float StartWaveSize = 2;
+    [Range(0.01f, 4)] [SerializeField] private float StartWaveSize = 2;//gia tri mac dinh la 2 nhung ban chi co the thay doi no trong khoang 0.01=>4
     float waveSize = 0;
 
     [Header("Rope Progression:")]
