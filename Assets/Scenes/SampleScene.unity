@@ -264,13 +264,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 65922343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 399e360cd3fbc914a8e49744e401dcca, type: 3}
+  m_Script: {fileID: 11500000, guid: b8371c2b3d5e9354baec003f6e4488e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grapplingGun: {fileID: 177610409}
   m_lineRenderer: {fileID: 65922345}
   percision: 40
-  straightenLineSpeed: 10
+  straightenLineSpeed: 12
   ropeAnimationCurve:
     serializedVersion: 2
     m_Curve:
@@ -284,8 +284,35 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1.2391052
-      value: 1.119278
+      time: 0.12830955
+      value: -0.11592858
+      inSlope: 1.5813719
+      outSlope: 1.5813719
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3900841
+      value: 0.47987548
+      inSlope: -0.40904814
+      outSlope: -0.40904814
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.80052245
+      value: -0.7217262
+      inSlope: 1.1141719
+      outSlope: 1.1141719
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.98431396
+      value: 0.49790192
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -295,24 +322,24 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  WaveSize: 2
-  ropeLaunchSpeedCurve:
+  StartWaveSize: 1
+  ropeProgressionCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 0.9400286
-      outSlope: 0.9400286
+      value: 1
+      inSlope: 0.049779635
+      outSlope: 0.049779635
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1.0462341
-      value: 0.98349
-      inSlope: 0.9400286
-      outSlope: 0.9400286
+      time: 1.9517013
+      value: 1.097155
+      inSlope: 0.049779635
+      outSlope: 0.049779635
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -320,8 +347,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ropeLaunchSpeedMultiplayer: 6.7
-  isGrappling: 0
+  ropeProgressionSpeed: 7
+  isGrappling: 1
 --- !u!1 &177610405
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +471,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 177610405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb8e6f691b525104788745c1fd227292, type: 3}
+  m_Script: {fileID: 11500000, guid: b473e3c0f5542884ab624f5de4579d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grappleRope: {fileID: 65922346}
@@ -454,20 +481,20 @@ MonoBehaviour:
   gunHolder: {fileID: 1962084500}
   gunPivot: {fileID: 1716377609}
   firePoint: {fileID: 1419613521}
-  rotateOverTime: 1
-  rotationSpeed: 18.3
-  hasMaxDistance: 0
-  maxDistance: 20
-  launchToPoint: 1
-  Launch_Type: 0
-  launchSpeed: 1.13
-  autoCongifureDistance: 0
-  targetDistance: 3
-  targetFrequency: 3
   m_springJoint2D: {fileID: 1962084497}
+  m_rigidbody: {fileID: 1962084498}
+  rotateOverTime: 1
+  rotationSpeed: 14.5
+  hasMaxDistance: 0
+  maxDistnace: 5
+  launchToPoint: 1
+  launchType: 1
+  launchSpeed: 2.54
+  autoConfigureDistance: 0
+  targetDistance: 3
+  targetFrequncy: 1
   grapplePoint: {x: 0, y: 0}
-  DistanceVector: {x: 0, y: 0}
-  ballRigidbody: {fileID: 1962084498}
+  grappleDistanceVector: {x: 0, y: 0}
 --- !u!1 &196721262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,7 +1139,7 @@ SpringJoint2D:
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
+  m_AutoConfigureDistance: 0
   m_Distance: 0.005
   m_DampingRatio: 1
   m_Frequency: 1
